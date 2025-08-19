@@ -29,27 +29,6 @@ st.markdown("""
         text-align: center;
         margin-bottom: 2rem;
     }
-    .summary-box {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        padding: 1.5rem;
-        border-radius: 10px;
-        color: white;
-        margin: 1rem 0;
-    }
-    .response-box {
-        background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-        padding: 1.5rem;
-        border-radius: 10px;
-        color: white;
-        margin: 1rem 0;
-    }
-    .warning-box {
-        background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
-        padding: 1rem;
-        border-radius: 10px;
-        color: white;
-        margin: 1rem 0;
-    }
     .info-box {
         background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
         padding: 1rem;
@@ -368,9 +347,7 @@ def main():
                 if error:
                     st.error(f"Error: {error}")
                 elif response:
-                    st.markdown('<div class="response-box">', unsafe_allow_html=True)
                     st.markdown("### 📝 Draft Response Letter")
-                    st.markdown('</div>', unsafe_allow_html=True)
                     
                     # Editable response
                     edited_response = st.text_area(
