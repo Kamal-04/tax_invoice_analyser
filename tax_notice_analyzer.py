@@ -207,8 +207,6 @@ Format the response as follows:
         - Due Date: [date]
         - Assessment Year: [year]
         - Any other important dates mentioned
-        
-        Also calculate days remaining until due date if possible.
         """
         
         try:
